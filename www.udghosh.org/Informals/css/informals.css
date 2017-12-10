@@ -1,0 +1,67 @@
+body {
+    font-family:  Arial, sans-serif;
+}
+.row {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card img{
+	margin-top: -20px;
+}
+
+.card {
+    width: 30%;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);;
+    transition: 0.3s;
+    float: left;
+    margin-left: 3%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+		width:100%;
+    padding: 2px 16px;
+    text-align: center;
+    background-color: #fff;
+}
+
+nav {
+    top: 0;
+    left: 0
+}
+
+header {
+    text-align: center;
+
+}
+
+header span {
+    font-size: 50px;
+    font-family: 'Baloo Da', cursive;
+}
+
+header p {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+    .card {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    #a1{
+      border-radius: 25px;
+
+    }
+    #a2{
+      border-radius: 25px;
+    }
+}

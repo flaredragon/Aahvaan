@@ -1,0 +1,838 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<!-- Mirrored from www.udghosh.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Dec 2017 01:39:12 GMT -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Udghosh'17</title>
+  <!-- stylesheet -->
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+  <script src="../s.codepen.io/assets/libs/modernizr.html" type="text/javascript"></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,700,400' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../s3-us-west-2.amazonaws.com/s.cdpn.io/148866/reset.css">
+<script src="../s.codepen.io/assets/libs/modernizr.html" type="text/javascript"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
+          <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/nav.css">
+<script src="../ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style2.css">
+
+  <link rel="stylesheet" href="css/home.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="css/style1.css"> <!-- Resource style -->
+
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+  <title>Vertical Fixed Navigation</title>
+
+    <style>
+
+
+.body {
+      background-color: rgba(35, 49, 74, 0.9);
+      top:0;
+      bottom: 0;
+      position: absolute;
+    }
+    .cd-intro img{
+      position: relative;
+     animation-delay: 0.5s;
+     -webkit-animation-delay: 0.5s;
+    -webkit-animation: mymove 0.5s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: ease-out; /* Safari 4.0 - 8.0 */
+    animation: mymove 0.5s ;
+    animation-timing-function: ease-out;
+    width: 100%;
+}
+ .cd-service h2 {
+    font-size: 20px;}
+
+@media only screen and (min-width: 768px){
+    .cd-intro img{
+      width: 50%;
+    }
+    .cd-service h2 {
+      font-size: 30px;}
+}
+
+@-webkit-keyframes mymove {
+    from {left: -950px;}
+    to {left: 0px;}
+}
+
+@keyframes mymove {
+    from {left: -950px;}
+    to {left: 0px;}
+}
+.action-wrapper a:hover{
+  text-decoration: none;
+  color:#ffffff;}
+
+.action-wrapper a:visited{
+  text-decoration: none;
+  color:#ffffff;}
+ .button5 {
+  position: relative;
+  //display:block;
+  height: 35px;
+  width: 140px;
+
+  padding: 5px 5px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,0.8);
+  border: 2px rgba(255,255,255,0.8) solid;
+  border-radius: 4px;
+  text-transform: uppercase;
+  outline: 0;
+  overflow:hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition:         0.08s ease-in;
+  -o-transition:      0.08s ease-in;
+  -ms-transition:     0.08s ease-in;
+  -moz-transition:    0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+
+.fill:hover {
+  color: whitesmoke;
+}
+
+.fill:before {
+  content: "";
+  position: absolute;
+  background: #c06c69;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.fill:hover:before {
+  top: 0;
+}
+
+.fade:before{
+  content:"→";
+  position:absolute;
+  color:#383736;
+  left: 88%;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in;
+}
+
+.fade:hover:before{
+  left:91%;
+  opacity:1;
+}
+
+.fade:hover {
+  border: 0px #fff solid;
+  -webkit-transform: scale(1.04,1.04);
+  -webkit-transition: border 0.3s ease-out;
+  -webkit-transition: transform 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+
+.arrow{
+  text-align:left;
+  padding-left:17px;
+}
+
+.arrow:before{
+  content:"→";
+  position:absolute;
+  color:#383736;
+  left: 83%;
+  opacity: 0;
+  -webkit-transition: all 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+
+.arrow:hover:before{
+  left:84%;
+  opacity:1;
+}
+
+.arrow:hover {
+  width:170px;
+}
+
+
+.slide:after{
+  content:"View Story";
+  position:absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  text-align:center;
+  -webkit-transition: all 400ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+
+.slide:before {
+  content:"Read it →";
+  height:100%;
+  width:100%;
+  position:absolute;
+  color:#c06c69;
+  left:-100%;
+  opacity: 0;
+  -webkit-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+
+.slide:hover{
+  background:#c06c69;
+}
+
+.slide:hover:before{
+  left:0;
+  opacity:1;
+  color: rgba(255,255,255,0.8);
+}
+.slide:hover:after{
+  left:100%;
+  opacity:0;
+}
+
+.slide.left:hover{
+  background:none;
+}
+
+.svg:after {
+  content: "";
+  position: absolute;
+  background: #c06c69;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -2;
+  -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+.svg:hover{
+  color:rgba(255,255,255,0.8);
+  border: 0px #c06c69 solid;
+}
+.svg:hover:before {
+  opacity: .8;
+}
+.svg:hover:after {
+  top: 0;
+}
+  .social {
+  width: 200px;
+  height: 220px;
+  position: fixed;
+  margin-top: 40vh;
+  perspective: 1000px;
+  z-index:2003;
+  font-size: 10px;
+}
+
+.social li a {
+  display: block;
+  height: 40px;
+  width: 40px;
+  background: #222;
+  border-bottom: 1px solid #222;
+  font: normal normal normal 16px/20px
+  'FontAwesome', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  transition: background .5s ease .300ms
+}
+
+.social li:first-child a:hover { background: #3b5998 }
+.social li:nth-child(2) a:hover { background: #00acee }
+.social li:nth-child(3) a:hover { background:#dd4b39 }
+.social li:nth-child(4) a:hover { background:  #e25714}
+
+.social li:first-child a { border-radius: 0 5px 0 0 }
+.social li:last-child a { border-radius: 0 0 5px 0 }
+
+.social li a span {
+  width: 100px;
+  float: left;
+  text-align: center;
+  background: #222;
+  color: #fff;
+  font-size: 13px;
+  margin: -25px 74px;
+  padding: 8px;
+  transform-origin: 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: rotateY(45deg);
+  border-radius: 5px;
+  transition: all .5s ease .300ms
+}
+
+.social li span:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -20px;
+  top: 7px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #222;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+}
+
+.social li a:hover span {
+  visibility: visible;
+  opacity: 1;
+  transform: rotateY(0)
+}
+
+canvas {
+  width: 900px;
+  height: 200px;
+
+  display: block;
+  position: relative;
+  background: transparent;
+  float: left;
+  margin-top: 88vh;
+
+  font-size: 10px;
+  margin-left: 5vh;
+  z-index: 0;
+  display: none;
+}
+@media only screen and (max-width: 600px){
+  canvas{
+    display: none;
+  }
+
+  .social {
+    display: none;
+  }
+}
+.button{
+  margin: 0px 10px !important;
+}
+.playstore {
+  width: 240px;
+    height: 140px;
+  
+}
+
+.playstore img {
+    width: 100%;
+    height: auto;
+}
+</style>
+
+</head>
+<body >
+  <div class="body">
+  <!-- Navigation Bar -->
+  <div class="topnav" id="myTopnav">
+  <div class="navbar-header"><a class="navbar-brand" href="index.html"><img src="img/logo.png" >
+        </a></div>
+
+  <span class="cl-effect-1"><a href="Events/index.html">EVENTS</a></span>
+  <span class="cl-effect-1"><a href="Gallery/index.html">GALLERY</a></span>
+  <span class="cl-effect-1"><a href="Team/index.html">TEAM</a></span>
+  <span class="cl-effect-1"><a data-toggle="modal" data-target="#myModal1" href="#">SPONSORS</a></span>
+  <span class="cl-effect-1"><a href="Informals/AdventureVilla.html">INFORMALS</a></span>
+  <span class="cl-effect-1"><a href="Hospitality/index.html">HOSPITALITY</a></span>
+
+  <a href="javascript:void(0);" style="font-size:15px; color: #333;" class="icon" onclick="myFunction()">&#9776;</a>
+        <a style="float:none; display: inline" href="https://docs.google.com/forms/d/e/1FAIpQLSdgYhCLqfDdt-1CKVFX48eiHnb00H42Z7P7h_W241LMy44oag/viewform" target="_blank"><button class="button button3">FEEDBACK</button></a>
+        <a style="float:none; display: inline" href="SignUp/index.html"><button class="button button3" disabled>REGISTER</button></a>
+
+
+          <li class="faq" ><a data-toggle="modal" data-target="#myModal" href="#" style="font-size: 13px; height: 40px; width: 49px; ">
+          <span class="fa-stack fa-lg" style="font-size: 1em;">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-question fa-stack-1x fa-inverse"></i><span style="text-align: center;padding-left: 30px; top:7px;">FAQs
+        </span></a></li>
+</div>
+
+
+<nav class=" hidden-md hidden-lg navbar navbar-default  " >
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div  class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#" style="border-right:none;   margin-top: 8px; padding:5px;"><img src="img/logo.png"  >
+        </a>
+        </div>
+        <!-- Collection of nav links and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="cl-effect-1"><a href="#">HOME</a></li>
+                <li class="cl-effect-1"><a href="Events/index.html">EVENTS</a></li>
+                <li class="cl-effect-1"><a href="Gallery/index.html">GALLERY</a></li>
+                <li class="cl-effect-1"><a href="Team/index.html">TEAM</a></li>
+                <li class="cl-effect-1"><a data-toggle="modal" data-target="#myModal1" href="#">SPONSORS</a></li>
+                <li class="cl-effect-1"><a href="Informals/AdventureVilla.html">INFORMALS</a></li>
+                <li class="cl-effect-1"><a href="Hospitality/index.html">HOSPITALITY</a></li>
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+  <section id="section1" class=" cd-intro">
+
+  <ul class='social'>
+  <li>
+    <a class="fa fa-facebook" href="https://www.facebook.com/udghosh.iitk/">
+      <span>Facebook</span>
+    </a>
+  </li>
+
+  <li>
+    <a class="fa fa-twitter" href="https://twitter.com/udghoshiitk">
+      <span>Twitter</span>
+    </a>
+  </li>
+
+  <li>
+    <a class="fa fa-youtube" href="https://www.youtube.com/user/udghosh11">
+      <span>Youtube</span>
+    </a>
+  </li>
+
+  <li>
+    <a class="fa fa-google-plus" href="https://plus.google.com/101958681892074759002?hl=en">
+    <span>Google Plus</span>
+    </a>
+  </li>
+
+</ul>
+    <div class="cd-intro-content mask">
+    <img src="img/tracing-the-roots.png"  >
+    <h1 data-content="12th - 15th October"><span>Tracing the roots</span></h1>
+    <div class="action-wrapper">
+      <p>
+        <!--<a style="cursor: pointer;" href="https://issuu.com/udghosh/docs/new_microsoft_powerpoint_presentati" target="_blank" class="cd-btn">Brochure</a>-->
+        <!--<a style="cursor: pointer;" data-toggle="modal" href="https://play.google.com/store/apps/details?id=com.subham.udghosh" target="_blank" class="cd-btn  main-action">Download Our App</a>-->
+        <div class="playstore"><a href="https://play.google.com/store/apps/details?id=com.subham.udghosh" target="_blank">
+        <img src="img/google-play-badge.png" width="50%" height="20%"></a>
+      </div>
+      </p>
+    </div>
+  </div>
+    <a href="#section2" class="cd-scroll-down cd-img-replace"></a>
+  </section><!-- cd-section -->
+
+
+  <header >
+    <h1></h1>
+  </header>
+
+  <ul id="section2" class="cd-container">
+    <li class="cd-service cd-service-divider"></li>
+
+    <li class="cd-service cd-service-1">
+      <h2>Registration Portal</h2>
+      <p>Registration is now open for India's Lagrest Inter-collegiate Sports Festival of IIT Kanpur.
+      <br>Hospitality fee per participant: Rs. 1500 + 200 (refundable security deposit). This includes food, accommodation and entry in various events. <br>
+      Accommodation + Messing charges are non refundable in any situation.<br><br>
+      <a href="SignUp/index.html"><button class="svg button5" disabled>REGISTER</button></a>
+    </li> <!-- cd-service -->
+
+    <li class="cd-service cd-service-2">
+      <h2>Lookback</h2>
+      <p>From the time Udghosh took its first step to organise a sports festival to now being the largest sports festival in india, it has witnessed great talents and have seen incredible victories. Each preceding year Udghosh lights up the leading minds of every single person having a thirst to achieve glory in the field of sports. Yet IIT kanpur, brings you Udghosh 17 with an upbring of more participation and competition to enhance the ligtning play of the talented sportsmen.</p><br><br>
+      <a href="Gallery/index.html"><button class="svg button5">Lookback</button></a>
+    </li> <!-- cd-service -->
+
+    <li class="cd-service cd-service-3">
+      <h2>Campus Ambassador</h2>
+      <p> If you are a passionate individual with ambitious dreams and would like to work with talented and qualified professionals from the top Sports Festival in the India, then this could be the right break for you. Udghosh’17 Ambassadors will implement the action plans for promoting the largest sports festival and its interactive as well as participation  programme on their campus.</p><br><br>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYOWK_m_eJ55CAqzn-gOuamP77smfeOLQaQUta1lBJEngd0Q/viewform" target="_blank"><button class="svg button5">APPLY</button></a>
+    </li> <!-- cd-service -->
+
+    <li class="cd-service cd-service-4">
+      <h2>Live Score updates</h2>
+      <p>Get Live Sports Score, Scorecard Updates, Match Facts and related News of all the Matches across the festival, updation would be in real-time!</p><br><br>
+      <a href="#"><button class="svg button5">Live</button></a>
+    </li> <!-- cd-service -->
+
+    <li class="cd-service cd-service-divider"></li>
+  </ul> <!-- cd-services -->
+
+  <footer>
+  <div class="foot">
+    <div class="footer-social-icons">
+    <ul class="social-icons">
+       <li><a href="https://www.facebook.com/udghosh.iitk/" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/udghoshiitk" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.youtube.com/user/udghosh11" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        <li><a href="https://www.linkedin.com/company-beta/7575911/" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://plus.google.com/101958681892074759002?hl=en" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+
+
+
+    </ul>
+
+</div>
+<div id="creative" style="color: #cccccc;  float: right; margin-right: 30px;margin-top:7px;"><i class="fa fa-copyright" aria-hidden="true"></i><span style="padding-left: 5px;font-size: 13px;">Creatives Udghosh 2017</span></div>
+    </div>
+  </div></footer>
+
+<script src="js/jquery-2.1.1.js"></script>
+ <script src='../cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+ <script src="../cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</body>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="color: #333;">Frequently Asked Questions</h4>
+      </div>
+      <div class="modal-body" style="color: #333;">
+        <h4><strong>Q. What is the procedure to be followed after reaching IITK?</strong></h4><br>
+        <p style="padding-left: 20px; color: #333;font-size:13px;">You need to report to the Hospitality Desk, Students Activity Centre (SAC) along with your college identity card. <br>You will have to produce the reciept of your online payment and a recent passport size photograph. <br>Booklet will act as your identity card in campus. <br>In case of a big contingent, contingent leader needs to present the ID cards of all the people in his contingent at the hospitality desk along with a list of all the people. Accommodation would be strictly on shared basis. </p>
+
+
+                <h4 class="q"><strong>Q. Can two participants be from different colleges in a team event?</strong></h4><br>
+        <p style="padding-left: 20px;color: #333;font-size:13px;">No, Udghosh does not allow cross participation from colleges in a team event.</p>
+
+
+                <h4 class="q"><strong>Q. Can I get accommodation on 10th october or before although the festival starts from 12th october?</strong></h4><br>
+        <p style="padding-left: 20px;color: #333; font-size:13px;">No, accommodation will be provided from 11th evening. All the participants coming before can stay in hotels outside IIT Kanpur.</p>
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <style type="text/css">
+          .q {margin-top: 30px;}
+        </style>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--SPONSORS-->
+
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="myModalLabel" style="color: #333; text-align:center;">Sponsors</h3>
+      </div>
+      <div class="modal-body" style="color: #333;">
+        <div class ="row" style="text-align:center; padding-top:28px;">
+          <h4>TITLE SPONSOR</h4></p>
+          <a href="http://lohiagroup.com/" target="_blank"><img src = "img/Sponsors/lohia_group.jpg" width="200px" style="padding-top:20px; "></a>
+        </div>
+        <!--<div class ="row" style="text-align:center; padding-top:28px;">
+          <h4>ASSOCIATE TITLE SPONSOR</h4></p>
+          <div class="col-md-4">
+          <img src = "img/Sponsors/lohia_group.jpg" width="100px" />
+          </div>
+          <div class="col-md-4">
+          <img src = "img/Sponsors/lohia_group.jpg" width="100px" />
+          </div>
+          <div class="col-md-4">
+          <img src = "img/Sponsors/lohia_group.jpg" width="100px" />
+          </div>
+        </div>-->
+        <!--<div class ="row" style="text-align:center; padding-top:28px;">
+          <h4>DRIVEN BY</h4></p>
+          <img src = "img/Sponsors/lohia_group.jpg" width="100px" />
+        </div>
+        <div class ="row" style="text-align:center; padding-top:28px;">
+          <h4>CONNECGED BY BY</h4></p>
+          <img src = "img/Sponsors/lohia_group.jpg" width="100px" />
+        </div>
+        <div class ="row" style="text-align:center; padding-top:28px;">
+          <h4>OTHER MAJOR SPONSORS</h4></p>
+          <img src = "img/Sponsors/lohia_group.jpg" width="100px" />
+        </div>-->
+
+        <div class ="row" style="text-align:center; padding-top:28px;">
+          <h4>CONNECTED BY</h4></p>
+          <a href="http://www.airtel.in/" target="_blank"><img src="img/Sponsors/airtel.png" height="80px" width="100px" style="padding-top:20px; "></a>
+        </div>
+
+        <div class ="row" style="text-align:center; padding-top:28px;">
+          <h4>ASSOCIATE TITLE SPONSORS</h4></p>
+			<div class="row" style="padding-top:20px;">
+            <div class= "col-md-3" style="padding-left:40px;">
+              <a href="http://www.jyotistrips.com/" target="_blank"><img src ="img/Sponsors/jyoti%20strips.png" height="100px" width="200px" style="padding-top:-20px;" /></a>
+            </div>
+            <div class= "col-md-3">
+              <a href="https://www.onlinesbi.com/" target="_blank"><img src ="img/Sponsors/sbi.png" height="80px" width="150px" style="padding-top:20px;" /></a>
+            </div>
+            <div class= "col-md-3">
+              <a href="http://www.jagran.com/" target="_blank"><img src ="img/Sponsors/danik%20jagran.png" height="80px" width="100px" style="padding-top:20px;" /></a>
+            </div>
+          <div class= "col-md-3">
+            <a href="http://onlineupsidc.com/" target="_blank"><img src ="img/Sponsors/upsidc.jpg" height="80px" width="130px" style="padding-top:20px;" /></a>
+          </div>
+        </div>
+      </div>
+
+         <div class ="row" style="text-align:center; padding-top:28px;">
+          <h4>TITLE SPONSOR INFORMALS</h4></p>
+          <a href="https://www.baadshahgaming.com/" target="_blank"><img src="img/Sponsors/baadshah.png" height="120px" width="200px" style="padding-top:20px; "></a>
+        </div>
+
+
+
+        <div class="row" style="text-align:center; padding-top:28px;">
+          <h4>MAJOR SPONSORS</h4></p>
+
+          <div class="row" style="padding-top:20px;">
+            <div class= "col-md-4">
+              <a href="https://www.aplapollo.com/" target="_blank"><img src = "img/Sponsors/apl%20apollo.png" height="80px" width="120px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Associate Sponsors</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="https://kesco.co.in/wss/" target="_blank"><img src = "img/Sponsors/kesco.png" width="80px" height="80px" style="padding-top:20px;"/></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Platinum Sponsor</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="https://www.alcissports.com/" target="_blank"><img src = "img/Sponsors/alcis.png" height="80px" width="100px" style="padding-top:20px;"/></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Sports Partner</p>
+            </div>
+          </div>
+
+          <div class="row" style="padding-top:20px;">
+            <div class= "col-md-4">
+              <a href="https://www.licindia.in/" target="_blank"><img src = "img/Sponsors/lic.png" width="100px" height="80px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Social Welfare Partner</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="https://www.fastrack.in/" target="_blank"><img src = "img/Sponsors/fastrack.png" height="80px" width="100px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Fashion Partner</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="http://www.vh1.com/" target="_blank"><img src = "img/Sponsors/vh1.png" height="80px" width="100px" style="padding-top:20px;"/></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Associate Sponsors</p>
+            </div>
+          </div>
+
+          <div class="row" style="padding-top:20px;">
+            <div class= "col-md-4">
+              <a href="http://www.hrs.co.in/index.php/en/" target="_blank"><img src = "img/Sponsors/hrs.png" width="100px" height="80px" style="padding-top:20px;"/></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Events Partner</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="http://www.cugl.co.in/" target="_blank"><img src = "img/Sponsors/cugl.png" height="80px" width="100px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Gold Sponsors</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="http://www.sukhdevandco.com/" target="_blank"><img src = "img/Sponsors/alfa.png" height="80px" width="100px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Sports Equipment Partner</p>
+            </div>
+          </div>
+
+          <div class="row" style="padding-top:20px;">
+            <div class= "col-md-4">
+              <a href="https://www.facebook.com/campuseventspvtltd/" target="_blank"><img src = "img/Sponsors/campusevents.png" height="80px" width="100px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Public Relations Partner</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="http://www.yonex.com/" target="_blank"><img src = "img/Sponsors/yonex.png" height="80px" width="130px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Official Sports Equipment Partner</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="http://www.wrogn.in/" target="_blank"><img src = "img/Sponsors/wrogn.png" height="80px" width="100px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Fashion Partner</p>
+            </div>
+          </div>
+
+          <div class="row" style="padding-top:20px;">
+            <div class= "col-md-4">
+              <a href="http://heinisports.com/" target="_blank"><img src = "img/Sponsors/heini.png" width="100px" height="80px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Sports Clothing Partner</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="http://denverformen.com/" target="_blank"><img src = "img/Sponsors/denver.jpg" height="80px" width="100px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Fragnance Partner</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="https://www.time4education.com/" target="_blank"><img src = "img/Sponsors/time.jpg" height="80px" width="100px" style="padding-top:20px;"/></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Education Partner</p>
+            </div>
+          </div>
+
+          <div class="row" style="padding-top:20px;">
+            <div class= "col-md-4">
+              <a href="https://zebronics.com/" target="_blank"><img src = "img/Sponsors/zebronics.jpg" height="80px" width="100px" style="padding-top:20px;"/></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Audio Partner</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="http://www.stag.in/sports.html" target="_blank"><img src = "img/Sponsors/stag.png" height="80px" width="100px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Sports Equipment Partner</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="http://www.tatainternational.com/stryder/" target="_blank"><img src = "img/Sponsors/tata%20stryder.png" height="80px" width="100px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Title Sponsors Cyclothron</p>
+            </div>
+          </div>
+
+          <div class="row" style="padding-top:20px;">
+            <div class= "col-md-4">
+              <a href="http://www.dreamjee.com/" target="_blank"><img src = "img/Sponsors/dream.png" width="130px" height="80px" style="padding-top:20px;"/></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Education Partner</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="http://campuseshop.com/" target="_blank"><img src = "img/Sponsors/campus%20e%20shop.png" height="80px" width="130px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Supported By Cyclothron</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="#"><img src = "img/Sponsors/fashion%20saloon.png" height="80px" width="100px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Style Partner</p>
+            </div>
+          </div>
+
+          <div class="row" style="padding-top:20px;">
+            <div class= "col-md-4">
+              <a href="#"><img src = "img/Sponsors/digi.png" width="100px" height="80px" style="padding-top:20px;"/></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Orientation Goodies Partner</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="https://www.facebook.com/fukoiitk/" target="_blank"><img src = "img/Sponsors/fuko.jpg" height="80px" width="100px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Online Travel Partner</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="http://www.thegrapevine.co.in/" target="_blank"><img src = "img/Sponsors/grapevine.png" height="80px" width="100px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Youth Partner</p>
+            </div>
+          </div>
+
+          <div class="row" style="padding-top:20px;">
+            <div class= "col-md-4">
+              <a href="http://www.jagranengage.com/" target="_blank"><img src = "img/Sponsors/jagran%20engage.png" width="100px" height="80px" style="padding-top:20px;"/></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Outdoor Publicity Partner</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="http://www.saharasamay.com/" target="_blank"><img src = "img/Sponsors/shara%20news.jpg" height="90px" width="100px" style="padding-top:20px;" /></a>
+              <p style="margin-top:0px; font-size:14px; color:black;">Coverage Partner</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="https://www.carnivalcinemas.com/#/" target="_blank"><img src = "img/Sponsors/carnival.png" height="80px" width="100px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Multiplex Partner</p>
+            </div>
+          </div>
+
+          <div class="row" style="padding-top:20px;">
+            <div class= "col-md-4">
+              <a href="http://927bigfm.com/" target="_blank"><img src = "img/Sponsors/big%20fm.png" width="100px" height="80px" style="padding-top:20px;"/></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Radio Partner</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="https://www.facebook.com/RoyalsRawfilms/" target="_blank"><img src = "img/Sponsors/royal.png" height="80px" width="100px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Official Aftermovie Partner</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="#"><img src = "img/Sponsors/red%20hat%20production.jpg" height="80px" width="100px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Photography Partner</p>
+            </div>
+          </div>
+
+          <div class="row" style="padding-top:20px;">
+            <div class= "col-md-4">
+              <a href="#"><img src = "img/Sponsors/fit%20muscle.png" width="100px" height="80px" style="padding-top:20px;"/></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Fitness Partner</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="#"><img src = "img/Sponsors/indian%20news.png" height="80px" width="140px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Online Media Partner</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="http://dubeat.com/" target="_blank"><img src = "img/Sponsors/du%20beats.png" height="80px" width="100px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Online Media Partner</p>
+            </div>
+          </div>
+
+          <div class="row" style="padding-top:20px;">
+            <div class= "col-md-4">
+              <a href="http://www.mtvindia.com/" target="_blank"><img src = "img/Sponsors/mtv.png" height="80px" width="100px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Powered By</p>
+            </div>
+            <div class= "col-md-4">
+              <a href="#"><img src = "img/Sponsors/rammo.jpg" height="80px" width="100px" style="padding-top:20px;" /></a>
+              <p style="margin-top:10px; font-size:14px; color:black;">Gold Sponsor</p>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <style type="text/css">
+          .q {margin-top: 30px;}
+        </style>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!---->
+
+
+
+<div class="modal fade"  id="marthonGForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="color: #333;">REGISTRATION</h4>
+      </div>
+      <div class="modal-body" style="color: #333; align-content: center;">
+
+            <iframe  src="https://docs.google.com/forms/d/e/1FAIpQLSfClJHh0CebqLxwd6u-loNgfZ4lrBT0WHGYsIdeG8rwcZHPHg/viewform?embedded=true" width="870" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <style type="text/css">
+          .q {margin-top: 30px;}
+        </style>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Mirrored from www.udghosh.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Dec 2017 01:42:42 GMT -->
+</html>
